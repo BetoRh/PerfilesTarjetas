@@ -1,4 +1,4 @@
-package com.ibm.academia.apirest.entities;
+package com.ibm.academia.apirest.models.entities;
 
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -10,6 +10,8 @@ import javax.persistence.FetchType;
 import javax.persistence.ManyToMany;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -24,6 +26,7 @@ import lombok.Setter;
 public class Solicitante extends Persona{
 	
 	@Column(name = "sueldo")
+	@JsonFormat(shape = JsonFormat.Shape.STRING)
 	private BigDecimal sueldo;
 	
 	

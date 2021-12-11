@@ -1,0 +1,40 @@
+2021-12-10 15:15:56,733 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-10 15:15:56,740 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-1 - Shutdown initiated...
+2021-12-10 15:15:56,754 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-1 - Shutdown completed.
+2021-12-10 15:15:56,975 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TarjetasCreditoApplication using Java 1.8.0_301 on LAPTOP-TQRN9BM8 with PID 14524 (C:\EclipseSts\WorkSpace\PerfilesTarjetas\target\classes started by Alberto in C:\EclipseSts\WorkSpace\PerfilesTarjetas)
+2021-12-10 15:15:56,976 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-10 15:15:57,227 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-10 15:15:57,258 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2021-12-10 15:15:57,423 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9082 (http)
+2021-12-10 15:15:57,424 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9082"]
+2021-12-10 15:15:57,425 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-10 15:15:57,426 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-10 15:15:57,444 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-10 15:15:57,444 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 464 ms
+2021-12-10 15:15:57,486 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-10 15:15:57,492 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-12-10 15:15:57,559 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-12-10 15:15:57,560 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-12-10 15:15:57,809 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-10 15:15:57,810 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-10 15:15:57,949 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-10 15:15:58,056 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-10 15:15:58,067 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9082"]
+2021-12-10 15:15:58,069 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9082 (http) with context path ''
+2021-12-10 15:15:58,075 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TarjetasCreditoApplication in 1.15 seconds (JVM running for 71.377)
+2021-12-10 15:15:58,079 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-12-10 15:16:07,044 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(11)-127.0.0.1] Application shutdown requested.
+2021-12-10 15:16:07,325 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(11)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-10 15:16:07,328 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-2 - Shutdown initiated...
+2021-12-10 15:16:07,343 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-2 - Shutdown completed.
+2021-12-10 15:16:14,145 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TarjetasCreditoApplication using Java 1.8.0_301 on LAPTOP-TQRN9BM8 with PID 3620 (C:\EclipseSts\WorkSpace\PerfilesTarjetas\target\classes started by Alberto in C:\EclipseSts\WorkSpace\PerfilesTarjetas)
+2021-12-10 15:16:14,149 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-10 15:16:14,153 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-10 15:16:14,217 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-10 15:16:14,218 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-10 15:16:15,126 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-10 15:16:15,234 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 94 ms. Found 3 JPA repository interfaces.
+2021-12-10 15:16:16,090 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9082 (http)
+2021-12-10 15:16:16,105 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9082"]
+2021-12-10 15:16:16,106 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-10 15:16:16,107 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]

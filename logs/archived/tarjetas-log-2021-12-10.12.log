@@ -1,0 +1,43 @@
+2021-12-10 16:22:45,963 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-10 16:22:45,966 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2006 ms
+2021-12-10 16:22:46,190 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-10 16:22:46,257 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-10 16:22:46,433 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-10 16:22:46,593 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-12-10 16:22:47,223 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-12-10 16:22:47,275 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-12-10 16:22:48,512 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-10 16:22:48,530 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-10 16:22:49,034 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-10 16:22:49,675 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-10 16:22:49,700 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9082"]
+2021-12-10 16:22:49,721 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9082 (http) with context path ''
+2021-12-10 16:22:49,732 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TarjetasCreditoApplication in 6.318 seconds (JVM running for 7.622)
+2021-12-10 16:24:12,662 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-10 16:24:12,662 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9082-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-12-10 16:24:12,664 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9082-exec-1] Completed initialization in 1 ms
+2021-12-10 16:26:06,091 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-10 16:26:06,096 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-1 - Shutdown initiated...
+2021-12-10 16:26:06,109 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-1 - Shutdown completed.
+2021-12-10 16:26:06,357 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TarjetasCreditoApplication using Java 1.8.0_301 on LAPTOP-TQRN9BM8 with PID 18204 (C:\EclipseSts\WorkSpace\PerfilesTarjetas\target\classes started by Alberto in C:\EclipseSts\WorkSpace\PerfilesTarjetas)
+2021-12-10 16:26:06,357 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-10 16:26:06,609 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-10 16:26:06,635 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2021-12-10 16:26:06,803 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9082 (http)
+2021-12-10 16:26:06,805 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9082"]
+2021-12-10 16:26:06,805 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-10 16:26:06,806 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-10 16:26:06,832 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-10 16:26:06,833 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 472 ms
+2021-12-10 16:26:06,880 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-10 16:26:06,889 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-12-10 16:26:06,971 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-12-10 16:26:06,972 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-12-10 16:26:07,244 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-10 16:26:07,246 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-10 16:26:07,398 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-10 16:26:07,535 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-10 16:26:07,552 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9082"]
+2021-12-10 16:26:07,556 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9082 (http) with context path ''
+2021-12-10 16:26:07,563 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TarjetasCreditoApplication in 1.256 seconds (JVM running for 205.453)
+2021-12-10 16:26:07,567 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged

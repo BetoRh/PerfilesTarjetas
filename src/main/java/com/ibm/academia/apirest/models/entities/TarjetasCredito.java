@@ -1,4 +1,4 @@
-package com.ibm.academia.apirest.entities;
+package com.ibm.academia.apirest.models.entities;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -20,6 +20,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -36,7 +39,10 @@ public class TarjetasCredito implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column(name = "nombre", unique = true, nullable = false)
+	@NotNull(message = "No puede ser vacio")
+	@NotEmpty(message = "No puede ser vacio")
+	@Size(min = 1, max = 80)
+	@Column(name = "nombre", unique = true)
 	private String nombre;
 	
 	@Column(name = "fecha_alta")

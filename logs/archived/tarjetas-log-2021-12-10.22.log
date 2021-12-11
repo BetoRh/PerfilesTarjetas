@@ -1,0 +1,37 @@
+2021-12-10 18:25:08,365 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-10 18:25:08,368 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-10 18:25:08,507 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-10 18:25:08,623 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-10 18:25:08,641 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9082"]
+2021-12-10 18:25:08,644 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9082 (http) with context path ''
+2021-12-10 18:25:08,653 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TarjetasCreditoApplication in 1.161 seconds (JVM running for 405.903)
+2021-12-10 18:25:08,659 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-12-10 18:25:14,168 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9082-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-10 18:25:14,169 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9082-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-12-10 18:25:14,172 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9082-exec-2] Completed initialization in 1 ms
+2021-12-10 18:26:31,890 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9082-exec-5] Resolved [com.ibm.academia.apirest.exception.BadRequestException: La tarjeta con ID: 35 no existe]
+2021-12-10 18:28:09,482 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-13] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-10 18:28:09,484 INFO com.zaxxer.hikari.HikariDataSource [Thread-13] HikariPool-2 - Shutdown initiated...
+2021-12-10 18:28:09,498 INFO com.zaxxer.hikari.HikariDataSource [Thread-13] HikariPool-2 - Shutdown completed.
+2021-12-10 18:28:09,703 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TarjetasCreditoApplication using Java 1.8.0_301 on LAPTOP-TQRN9BM8 with PID 11812 (C:\EclipseSts\WorkSpace\PerfilesTarjetas\target\classes started by Alberto in C:\EclipseSts\WorkSpace\PerfilesTarjetas)
+2021-12-10 18:28:09,704 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-10 18:28:09,948 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-10 18:28:09,974 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2021-12-10 18:28:10,127 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9082 (http)
+2021-12-10 18:28:10,128 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9082"]
+2021-12-10 18:28:10,129 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-10 18:28:10,130 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-10 18:28:10,148 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-10 18:28:10,149 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 441 ms
+2021-12-10 18:28:10,193 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-10 18:28:10,198 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2021-12-10 18:28:10,262 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2021-12-10 18:28:10,264 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-12-10 18:28:10,506 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-10 18:28:10,507 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-10 18:28:10,628 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-10 18:28:10,743 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-10 18:28:10,753 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9082"]
+2021-12-10 18:28:10,756 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9082 (http) with context path ''
+2021-12-10 18:28:10,760 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TarjetasCreditoApplication in 1.103 seconds (JVM running for 588.011)
+2021-12-10 18:28:10,762 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
