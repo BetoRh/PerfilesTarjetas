@@ -33,6 +33,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = "tarjetas_credito", schema = "tarjeta")
+//@Table(name = "tarjetas_credito")
 public class TarjetasCredito implements Serializable {
 	
 	@Id
@@ -59,6 +60,7 @@ public class TarjetasCredito implements Serializable {
 	@ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	@JoinTable(
 			name = "tarjetas_solicitantes_pasatiempos",schema = "tarjeta",
+			//name = "tarjetas_solicitantes_pasatiempos",
 			joinColumns = @JoinColumn(name = "tarjeta_id"),
 			inverseJoinColumns =  @JoinColumn(name = "solicitante_id")		
 	)

@@ -34,6 +34,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = "personas", schema = "tarjeta")
+//@Table(name = "personas")
 @Inheritance(strategy = InheritanceType.JOINED)
 @JsonTypeInfo(
 		use = JsonTypeInfo.Id.NAME,
