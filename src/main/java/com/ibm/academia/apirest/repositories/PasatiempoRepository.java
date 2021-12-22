@@ -9,7 +9,7 @@ import com.ibm.academia.apirest.models.entities.Pasatiempo;
 @Repository
 public interface PasatiempoRepository extends CrudRepository<Pasatiempo, Integer> {
 	
-	@Query("select p from Pasatiempo p where p.nombre = ?1")
+	@Query("select p.nombre from Pasatiempo p where p.nombre = ?1")
 	public Iterable<Pasatiempo>findPasatiempoByNombre(String nombre);
 	
 

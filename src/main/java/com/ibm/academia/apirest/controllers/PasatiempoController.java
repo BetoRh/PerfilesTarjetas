@@ -1,7 +1,11 @@
 package com.ibm.academia.apirest.controllers;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.List;
+import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,53 +35,17 @@ public class PasatiempoController {
 	 * @author RAJA 15/12/10
 	 */
 	
+	
 	@GetMapping("/validar")
-	public String pasatiempos(@RequestParam(value = "nombre") String nombre, @RequestParam(value = "edad") Integer edad,
+	public ResponseEntity<?> pasatiempos(@RequestParam(value = "pasatiempo") String pasatiempo, @RequestParam(value = "edad") Integer edad,
 			@RequestParam(value = "sueldo") Double sueldo) {
 		
+		String oPasatiempo =  pasatiempoDAO.validacion(pasatiempo, edad, sueldo);
 		
-		if ((edad <= 17) || (sueldo <= 6999.00)) {
-
-			throw new NotFoundException("No se cumple con la edad minima ni con el sueldo minimo");
-
-		} else if (nombre.equalsIgnoreCase("Shopping")) {
-
-			pasatiempo = pasatiempoDAO.shopping(edad, sueldo);
-			
-			 System.out.println(pasatiempo.toString());
-			return pasatiempo;
-
-		} else if (nombre.equalsIgnoreCase("Travels") || (nombre.equalsIgnoreCase("Help")) && sueldo <= 11999.00) {
-
-			throw new NotFoundException("Debes de tener un sueldo mayor a 12000.00");
-
-		} else if (nombre.equalsIgnoreCase("Travels")) {
-
-			pasatiempo = pasatiempoDAO.travels(edad, sueldo);
-			return pasatiempo;
-
-		} else if (nombre.equalsIgnoreCase("Help")) {
-
-			pasatiempo = pasatiempoDAO.help(edad, sueldo);
-			return pasatiempo;
-
-		} else if (nombre.equalsIgnoreCase("Bussines")) {
-
-			pasatiempo = pasatiempoDAO.bussines(edad, sueldo);
-			return pasatiempo;
-
-		} else if (nombre.equalsIgnoreCase("Sport")) {
-
-			pasatiempo = pasatiempoDAO.sports(edad, sueldo);
-			return pasatiempo;
-
-		} else if (nombre.equalsIgnoreCase("Style")) {
-
-			pasatiempo = pasatiempoDAO.myStyle(edad, sueldo);
-			return pasatiempo;
-
-		}
-		return null;
+		return new ResponseEntity<String>(oPasatiempo, HttpStatus.OK);
+		 
 	}
+	
+	
 
 }

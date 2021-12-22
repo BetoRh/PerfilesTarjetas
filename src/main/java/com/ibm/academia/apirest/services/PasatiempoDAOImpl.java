@@ -1,12 +1,14 @@
 package com.ibm.academia.apirest.services;
-
-
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.ibm.academia.apirest.enums.TiposTarjetas;
+import com.ibm.academia.apirest.exception.handler.NotFoundException;
 import com.ibm.academia.apirest.models.entities.Pasatiempo;
 import com.ibm.academia.apirest.repositories.PasatiempoRepository;
 
@@ -16,7 +18,9 @@ public class PasatiempoDAOImpl implements PasatiempoDAO {
 	@Autowired
 	private PasatiempoRepository pasatiempoRepository;
 
-	private String respuesta;
+	
+	String respuesta;
+	
 
 	@Override
 	@Transactional(readOnly = true)
@@ -76,8 +80,8 @@ public class PasatiempoDAOImpl implements PasatiempoDAO {
 			respuesta = ("Tarjeta: " + TiposTarjetas.PLATINUM);
 
 		}
-
 		return respuesta;
+
 	}
 
 	@Override
@@ -228,5 +232,54 @@ public class PasatiempoDAOImpl implements PasatiempoDAO {
 	
 	
 	}
+	
+	public String validacion(String nombre, Integer edad, Double sueldo) {
+		
+		String respuesta;
+	
+		if ((edad <= 17) || (sueldo <= 6999.00)) {
 
-}
+			throw new NotFoundException("No se cumple con la edad minima ni con el sueldo minimo");
+
+		} else if (nombre.equalsIgnoreCase("Shopping")) {
+
+			respuesta = shopping(edad, sueldo);
+			
+			 System.out.println(respuesta.toString());
+			return  respuesta;
+
+		} else if (nombre.equalsIgnoreCase("Travels") && (nombre.equalsIgnoreCase("Help")) && sueldo <= 11999.00) {
+
+			throw new NotFoundException("Debes de tener un sueldo mayor a 12000.00");
+
+		} else if (nombre.equalsIgnoreCase("Travels")) {
+
+			respuesta = travels(edad, sueldo);
+			return respuesta;
+
+		} else if (nombre.equalsIgnoreCase("Help")) {
+
+			respuesta = help(edad, sueldo);
+			return respuesta;
+
+		} else if (nombre.equalsIgnoreCase("Bussines")) {
+
+			respuesta = bussines(edad, sueldo);
+			return respuesta;
+
+		} else if (nombre.equalsIgnoreCase("Sport")) {
+
+			respuesta = sports(edad, sueldo);
+			return respuesta;
+
+		} else if (nombre.equalsIgnoreCase("Style")) {
+
+			respuesta = myStyle(edad, sueldo);
+			return respuesta;
+
+		}
+		 throw new NotFoundException("Debes de introducir un pasatiempo valido");
+	}
+	}
+
+

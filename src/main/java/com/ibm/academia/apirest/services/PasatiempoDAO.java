@@ -18,6 +18,8 @@ public interface PasatiempoDAO {
 	
 	public String myStyle(Integer edad, Double sueldo);
 	
+	public String validacion(String pasatiempo, Integer edad, Double sueldo);
+	
 	
 
 }
